@@ -2,9 +2,10 @@ package com.example.appchat_kotlin
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.appchat_kotlin.LoginHandle.Login
+import com.example.appchat_kotlin.loginHandle.Login
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val signOutBtn: Button = findViewById(R.id.btn)
+
 
         signOutBtn.setOnClickListener() {
             FirebaseAuth.getInstance().signOut()
