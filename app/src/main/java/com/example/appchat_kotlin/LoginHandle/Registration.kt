@@ -1,21 +1,15 @@
-package com.example.appchat_kotlin
+package com.example.appchat_kotlin.LoginHandle
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.ProgressBar
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
-import androidx.core.view.isVisible
-import com.example.appchat_kotlin.databinding.ActivityLoginBinding
+import com.example.appchat_kotlin.MainActivity
+import com.example.appchat_kotlin.R
 import com.example.appchat_kotlin.databinding.ActivityRegistrationBinding
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import org.w3c.dom.Text
 
 class Registration : AppCompatActivity() {
 

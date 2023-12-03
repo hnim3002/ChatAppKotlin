@@ -1,29 +1,25 @@
-package com.example.appchat_kotlin
+package com.example.appchat_kotlin.LoginHandle
 
 import android.content.Intent
 import android.content.SharedPreferences
 
 import android.os.Bundle
 import android.view.View
-import android.widget.CheckBox
-import android.widget.ProgressBar
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
+import com.example.appchat_kotlin.MainActivity
 import com.example.appchat_kotlin.databinding.ActivityLoginBinding
 
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class Login : AppCompatActivity() {
 
+    private lateinit var binding: ActivityLoginBinding
     private lateinit var auth: FirebaseAuth
     private val FILE_NAME = "account"
 
-    private lateinit var binding: ActivityLoginBinding
+
 
     public override fun onStart() {
         super.onStart()
